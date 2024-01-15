@@ -16,7 +16,7 @@ for bars to appear, click "Working Hours" button twice
 
 
 'Deep Learning Project Phase 1.ipynb' file contains our model that will recognizes people and note their working time
-this file creats a database
+this file creates a database
   
 
 
