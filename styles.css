@@ -1,0 +1,17 @@
+body {
+  background-color: #f1f1f1;
+  margin: 0%;
+}
+
+#Header {
+  padding: 16px;
+  background-color: white;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}

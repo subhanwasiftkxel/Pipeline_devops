@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Deep Learning Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <body>
+    <div id="container">
+      <div id="Header">
+        <div class="Title">
+          <h1>Employees Dashboard</h1>
+        </div>
+      </div>
+      <form method="GET" action="GUI.js" id="employeeForm">
+        <label for="cars">Choose a Employees:</label><br />
+        <select name="Employees" id="Employees">
+          <option value="Me">Me</option>
+          <option value="My friend">My Friend</option>
+        </select>
+        <br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+  <script src="GUI.js"></script>
+</html>
