@@ -29,9 +29,7 @@ jobs:
     - name: install npm
       run: npm install 
     - name: Lint Action
-      uses: wearerequired/lint-action@v2.3.0
-      with:
-          eslint: true       
+      uses: wearerequired/lint-action@v2.3.0    
     - name: github-action-build
       uses: skx/github-action-build@release-0.6.1
       with:
