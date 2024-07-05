@@ -29,7 +29,7 @@ jobs:
     - name: install npm
       run: npm install 
     - name: Lint Action
-      run: npm run list  
+      run: npm run lint  
     - name: project-build
       run: npm run build
     - name: action-zip
