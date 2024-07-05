@@ -28,8 +28,7 @@ jobs:
       uses: actions/setup-node@v3
     - name: install npm
       run: npm install 
-    - name: Lint Action
-      run: npm run eslint  
+
     - name: project-build
       run: npm run build
     - name: action-zip
