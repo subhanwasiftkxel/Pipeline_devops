@@ -23,18 +23,26 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Checkout repd
+      uses: actions/checkout@v3
+      
+    - name: Use Node.js 
       uses: actions/setup-node@v3
+      with:
+        node-version: ${{matrix.node_version}}
     - name: install npm
-      run: npm install 
+      run: npm ci
 
     - name: project-build
       run: npm run build
     - name: action-zip
-      uses: montudor/action-zip@v1.0.0
+      run: zip -r server.zip server 
+      
+    - name: upload it to github
+      uses: actions/upload-artifact@4
       with:
-        args: zip server.zip server
+        name: build-artifact
+        path: server.zip
 
 
     
